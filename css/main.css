@@ -1,5 +1,7 @@
 header h1 {
 	font-size: 32px;
+	color: blue;
+	float: left;
 }
 
 nav li {
