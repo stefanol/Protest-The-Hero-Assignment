@@ -1,6 +1,7 @@
 @import 'styles/brand.less';
 @import 'styles/typography.less';
 @import 'styles/grid.less';
+@import 'styles/mixins.less';
 
 .container {
   width: 960px;
@@ -18,5 +19,19 @@ article#mainColumn {
 
 sidebar#sidebar {
   .column(4);
+}
+
+header h1 {
+	font-size: 32px;
+	color: blue;
+	float: left;
+}
+
+nav li {
+	display: inline;
+}
+
+header h1 {
+  color: red;
 }
 
