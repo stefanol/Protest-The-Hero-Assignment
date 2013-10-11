@@ -7,31 +7,63 @@
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: @color4;
+  .column(12);/*12 column grid*/
+}
+
+article#mainColumn {
+  .column(7);
+}
+
+sidebar#sidebar {
+  .column(5);
 }
 
 header {
   .column(12);
-}
-
-article#mainColumn {
-  .column(8);
-}
-
-sidebar#sidebar {
-  .column(4);
-}
-
-header h1 {
-	font-size: 32px;
-	color: blue;
+	color: @color1;
 	float: left;
+  width: 100%; 
+  background-color: @color5;
+h1 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 50px;
+  margin-left: 265px;
+}  
 }
 
-nav li {
-	display: inline;
+nav {
+  background-color: @color2;
+  ul { 
+  margin-left: 400px;
+  li {
+  display: inline;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+}
 }
 
-header h1 {
-  color: red;
+img#bandImg {
+  margin-left: 175px;
+}
+
+.buyTix {
+  margin-left: 400px;
+  .column(6);
+  float: right;
+  /*margin-bottom: 2px;*/
+  a {
+    text-decoration: none;
+  }
+}
+
+ul#fullTour {
+  li {
+    .column(6);
+  }
 }
 
