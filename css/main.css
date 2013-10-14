@@ -16,6 +16,12 @@ h3 {
   font-family: Droid Sans 700;
   font-size: 24px;
 }
+a {
+  color: #393939;
+}
+a:hover {
+  color: #3cbdc8;
+}
 body {
   width: 100%;
   *zoom: 1;
@@ -33,38 +39,24 @@ body:after {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/********GLOBAL STYLES******/
+.pageContainer {
+  width: 1280px;
+  background-color: #393939;
+}
 .container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   background-color: #898989;
-  display: inline;
-  float: left;
-  width: 940px;
-  margin: 0 10px;
-  /*12 column grid*/
-
-}
-article#mainColumn {
-  display: inline;
-  float: left;
-  width: 540px;
-  margin: 0 10px;
-}
-sidebar#sidebar {
-  display: inline;
-  float: left;
-  width: 380px;
-  margin: 0 10px;
 }
 header {
   display: inline;
   width: 940px;
   margin: 0 10px;
-  color: #3cbdc8;
+  color: #393939;
   float: left;
-  width: 100%;
-  background-color: #393939;
+  background-color: #898989;
 }
 header h1 {
   font-family: 'Droid Sans', sans-serif;
@@ -72,13 +64,16 @@ header h1 {
   margin-left: 265px;
 }
 nav {
-  background-color: #2bb293;
+  /*  background-color: @color1;*/
+
 }
 nav ul {
-  margin-left: 400px;
+  margin-left: 365px;
+  margin-bottom: 20px;
 }
 nav ul li {
   display: inline;
+  margin-left: 20px;
   font-size: 24px;
   font-family: 'Roboto', sans-serif;
 }
@@ -86,24 +81,98 @@ nav ul li a {
   text-decoration: none;
 }
 img#bandImg {
-  margin-left: 175px;
+  margin: 0 0 10px 175px;
 }
-.buyTix {
-  margin-left: 400px;
+#bandPhoto {
+  margin-right: 5px;
+}
+footer {
+  width: 960px;
+  height: 50px;
+  background-color: #3cbdc8;
+  margin-left: 160px;
+}
+footer p {
+  font-size: 18px;
+  padding: 15px 0 0 230px;
+}
+/*********HOME PAGE**********/
+article#mainColumn {
   display: inline;
   float: left;
-  width: 460px;
+  width: 540px;
   margin: 0 10px;
-  float: right;
-  /*margin-bottom: 2px;*/
-
 }
-.buyTix a {
+article#mainColumn h1 {
+  margin-bottom: 10px;
+}
+sidebar#sidebar {
+  display: inline;
+  float: left;
+  width: 380px;
+  margin: 0 10px;
+}
+section#tourDates h2 {
+  margin-bottom: 10px;
+}
+#tourDates ul {
+  margin-top: 15px;
+}
+#tourDates ul li {
+  margin-bottom: 30px;
+}
+#albumText {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+/***************************/
+/********ABOUT PAGE*********/
+h1#bandBio {
+  margin-left: 10px;
+}
+#bioContain {
+  width: 900px;
+  margin: 5px 0 20px 10px;
+}
+.left {
+  float: left;
+  margin: 3px;
+}
+#pthAlbums h2 {
+  margin: 0 0 10px 10px;
+}
+#pthAlbums ul li {
+  margin: 0 0 10px 10px;
+}
+#pthAlbums ul li a {
   text-decoration: none;
 }
-ul#fullTour li {
+/***************************/
+/*********TOUR PAGE********/
+#tourHeader {
+  margin: 10px 0 10px 68px;
+}
+ul#fullTour {
+  margin: 20px 0 0 0;
   display: inline;
   float: left;
-  width: 460px;
+  width: 700px;
   margin: 0 10px;
 }
+ul#fullTour li {
+  margin: 10px 0 10px 60px;
+}
+.buyTix {
+  display: inline;
+  float: left;
+  width: 220px;
+  margin: 0 10px;
+  float: right;
+  margin-bottom: 10px;
+}
+.buyTix li {
+  /*width: 300px;*/
+
+  font-size: 20px;
+}
+/****************************/

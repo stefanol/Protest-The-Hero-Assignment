@@ -3,67 +3,159 @@
 @import 'styles/grid.less';
 @import 'styles/mixins.less';
 
+
+/********GLOBAL STYLES******/
+
+.pageContainer {
+  width: 1280px;
+  background-color: @color5;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
   overflow: hidden;
   background-color: @color4;
-  .column(12);/*12 column grid*/
 }
+
+header {
+  .column(12);
+  color: @color5;
+  float: left;
+  background-color: @color4;
+h1 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 50px;
+  margin-left: 265px;
+  }  
+}
+
+nav {
+/*  background-color: @color1;*/
+  ul { 
+  margin-left: 365px;
+  margin-bottom: 20px;
+  li {
+  display: inline;
+  margin-left: 20px;
+  font-size: @navfontsize;
+  font-family: 'Roboto', sans-serif;
+  a {
+    text-decoration: none;
+      }
+    }  
+  }
+}
+
+img#bandImg {
+  margin: 0 0 10px 175px;
+}
+
+#bandPhoto {
+  margin-right: 5px;
+}
+
+footer {
+  width: 960px;
+  height: 50px;
+  background-color: @color1;
+  margin-left: 160px;
+  p {
+    font-size: 18px;
+    padding: 15px 0 0 230px;
+  }
+}
+
+/*********HOME PAGE**********/
 
 article#mainColumn {
   .column(7);
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 sidebar#sidebar {
   .column(5);
 }
 
-header {
-  .column(12);
-	color: @color1;
-	float: left;
-  width: 100%; 
-  background-color: @color5;
-h1 {
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 50px;
-  margin-left: 265px;
-}  
+section#tourDates {
+  h2 {
+    margin-bottom: 10px
+  }
 }
 
-nav {
-  background-color: @color2;
-  ul { 
-  margin-left: 400px;
+#tourDates ul {
+  margin-top: 15px;
   li {
-  display: inline;
-  font-size: 24px;
-  font-family: 'Roboto', sans-serif;
-  a {
-    text-decoration: none;
+    margin-bottom: 30px;
   }
 }
-}
+
+#albumText {
+  margin-bottom: 30px;
+  font-size: 20px;
 }
 
-img#bandImg {
-  margin-left: 175px;
+/***************************/
+
+/********ABOUT PAGE*********/
+
+h1#bandBio {
+  margin-left: 10px;
 }
 
-.buyTix {
-  margin-left: 400px;
-  .column(6);
-  float: right;
-  /*margin-bottom: 2px;*/
-  a {
-    text-decoration: none;
+#bioContain {
+  width: 900px;
+  margin: 5px 0 20px 10px;
+}
+
+.left {
+  float: left;
+  margin: 3px;
+}
+
+#pthAlbums {
+  h2 {
+    margin: 0 0 10px 10px;
   }
+}
+
+#pthAlbums ul {
+  li {
+    margin: 0 0 10px 10px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+/***************************/
+
+/*********TOUR PAGE********/
+
+#tourHeader {
+  margin: 10px 0 10px 68px;
 }
 
 ul#fullTour {
+  margin: 20px 0 0 0;
+    .column(9);
   li {
-    .column(6);
+    margin: 10px 0 10px 60px;
   }
 }
 
+.buyTix {
+  .column(3);
+  float: right;
+  margin-bottom: 10px;
+  li {
+    /*width: 300px;*/
+    font-size: 20px;
+  a {
+    }
+  } 
+}
+
+/****************************/
