@@ -7,8 +7,7 @@
   box-sizing:         border-box;
 }
 
-// Defaults to 5px radius
-.border-radius (@radius: 5px) {
+.border-radius (@radius: 10px) {
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
   border-radius:         @radius;
@@ -18,4 +17,20 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing:    border-box;
   box-sizing:         border-box;
+}
+
+.opacity (@opacity: 0.8) {
+	-webkit-opacity: 	@opacity;
+	-moz-opacity: 		@opacity;
+	opacity: 			@opacity;
+}
+
+.box-shadow (@x: 6px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.reflect (@length: 50%, @opacity: 0.2){
+    -webkit-box-reflect: below 12px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(@length, transparent), to(rgba(255,255,255,@opacity)));
 }

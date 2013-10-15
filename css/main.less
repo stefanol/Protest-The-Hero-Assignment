@@ -16,24 +16,20 @@
   margin: 0 auto;
   overflow: hidden;
   background-color: @color4;
+  .border-radius;
 }
 
 header {
   .column(12);
   color: @color5;
   float: left;
-  background-color: @color4;
-h1 {
-  font-family: 'Droid Sans', sans-serif;
-  font-size: 50px;
-  margin-left: 265px;
-  }  
+  background-color: @color4; 
 }
 
 nav {
-/*  background-color: @color1;*/
+  /*background-color: @color4;*/
   ul { 
-  margin-left: 365px;
+  margin-left: 360px;
   margin-bottom: 20px;
   li {
   display: inline;
@@ -47,19 +43,13 @@ nav {
   }
 }
 
-img#bandImg {
-  margin: 0 0 10px 175px;
-}
-
-#bandPhoto {
-  margin-right: 5px;
-}
-
 footer {
   width: 960px;
   height: 50px;
+  .border-radius;
   background-color: @color1;
   margin-left: 160px;
+  .opacity;
   p {
     font-size: 18px;
     padding: 15px 0 0 230px;
@@ -68,11 +58,31 @@ footer {
 
 /*********HOME PAGE**********/
 
+img#bandImg {
+  margin: 0 0 10px 175px;
+  .border-radius;
+  .box-shadow(5px, 5px, 6px, 0.3);
+}
+
 article#mainColumn {
   .column(7);
   h1 {
+    font-size: @honefontsize;
+    font-family: @headerfont;
     margin-bottom: 10px;
   }
+}
+
+article img {
+  .border-radius;
+  .box-shadow(5px, 5px, 6px, 0.3);
+}
+
+h2#volitionText {
+  font-size: @htwofontsize;
+  font-family: @headerfont;
+  padding-top: 13px;
+  margin-bottom: 30px;
 }
 
 sidebar#sidebar {
@@ -81,6 +91,8 @@ sidebar#sidebar {
 
 section#tourDates {
   h2 {
+    font-size: @htwofontsize;
+    font-family: @headerfont;
     margin-bottom: 10px
   }
 }
@@ -92,38 +104,67 @@ section#tourDates {
   }
 }
 
-#albumText {
-  margin-bottom: 30px;
-  font-size: 20px;
-}
-
 /***************************/
 
 /********ABOUT PAGE*********/
 
+#bandPhoto {
+  margin-right: 5px;
+  .border-radius;
+}
+
 h1#bandBio {
   margin-left: 10px;
+  text-decoration: underline;
+  font-size: @honefontsize;
+  font-family: @headerfont;
 }
 
 #bioContain {
   width: 900px;
   margin: 5px 0 20px 10px;
+  font-family: @bodyfontfamily;
+  font-size: @bodyfontsize;
+  line-height: @baselineheight;
+}
+
+#bioContain img {
+  .box-shadow(2px, 2px, 3px, 0.5);
 }
 
 .left {
   float: left;
-  margin: 3px;
+  margin: 1px;
 }
 
 #pthAlbums {
   h2 {
     margin: 0 0 10px 10px;
+    font-size: @htwofontsize;
+    text-decoration: underline;
   }
 }
 
-#pthAlbums ul {
+#pthAlbums {
+  .reflect(20%, 0.1);
+  ul {
+    margin-left: 20px;
+    li {
+      margin: 0 0 10px 20px;
+      display: inline;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+ul#albumText {
+  margin: 0 0 10px 29px;
   li {
-    margin: 0 0 10px 10px;
+    display: inline;
+    margin-left: 35px;
+    font-weight: bold;
     a {
       text-decoration: none;
     }
@@ -136,6 +177,8 @@ h1#bandBio {
 
 #tourHeader {
   margin: 10px 0 10px 68px;
+  text-decoration: underline;
+  font-size: @honefontsize
 }
 
 ul#fullTour {
